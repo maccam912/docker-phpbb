@@ -12,3 +12,5 @@ RUN yaourt -Sy --noconfirm phpbb3 php-sqlite apache
 #RUN mkdir /Development
 
 #RUN cd /Development && wget https://www.phpbb.com/files/release/phpBB-3.1.1.zip && unzip /Development/*.zip && rm /Development/*.zip
+EXPOSE 80:80
+EXPOSE 443:443

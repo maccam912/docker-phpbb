@@ -1,7 +1,7 @@
 FROM base/archlinux
 MAINTAINER Matt Koski <maccam912@gmail.com>
 
-RUN pacman -Syu
+#RUN pacman -Syu
 
 RUN pacman -Sy sqlite debconf-utils
 

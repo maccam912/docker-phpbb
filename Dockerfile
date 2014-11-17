@@ -5,7 +5,7 @@ MAINTAINER Matt Koski <maccam912@gmail.com>
 
 RUN pacman -Sy --noconfirm sqlite
 
-RUN pacman -Sy --noconfirm phpbb3
+#RUN pacman -Sy --noconfirm phpbb3
 
 #RUN mkdir /Development
 

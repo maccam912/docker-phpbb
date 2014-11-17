@@ -2,6 +2,7 @@ FROM phusion/baseimage
 MAINTAINER Matt Koski <maccam912@gmail.com>
 
 RUN export DEBIAN_FRONTEND=noninteractive
+RUN echo mysql-server-5.5 mysql-server/root_password password password | debconf-set-selections
 
 RUN apt-get update
 RUN apt-get upgrade -y

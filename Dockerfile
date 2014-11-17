@@ -3,7 +3,7 @@ MAINTAINER Matt Koski <maccam912@gmail.com>
 
 #RUN pacman -Syu
 
-RUN pacman -Sy sqlite debconf-utils
+RUN pacman -Sy sqlite
 
 RUN pacman -Sy phpbb3
 

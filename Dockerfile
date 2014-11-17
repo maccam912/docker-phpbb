@@ -1,17 +1,11 @@
-FROM phusion/baseimage
+FROM base/archlinux
 MAINTAINER Matt Koski <maccam912@gmail.com>
 
-RUN export DEBIAN_FRONTEND=noninteractive
+RUN pacman -Syu
 
-RUN apt-get update
-RUN apt-get upgrade -y
+RUN pacman -Sy sqlite debconf-utils
 
-RUN apt-get install sqlite debconf-utils -y
-
-RUN debconf-set-selections 'mysql-server-5.5 mysql-server/root_password password password'
-RUN debconf-set-selections 'mysql-server-5.5 mysql-server/root_password_again password password'
-
-RUN apt-get install phpbb3 -y
+RUN pacman -Sy phpbb3
 
 #RUN mkdir /Development
 

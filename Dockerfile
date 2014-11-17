@@ -2,8 +2,8 @@ FROM phusion/baseimage
 MAINTAINER Matt Koski <maccam912@gmail.com>
 
 RUN export DEBIAN_FRONTEND=noninteractive
-RUN debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password password password'
-RUN debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password_again password password'
+RUN debconf-set-selections mysql-server-5.5 mysql-server/root_password password password
+RUN debconf-set-selections mysql-server-5.5 mysql-server/root_password_again password password
 
 RUN apt-get update
 RUN apt-get upgrade -y

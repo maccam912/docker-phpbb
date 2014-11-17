@@ -1,6 +1,8 @@
 FROM phusion/baseimage
 MAINTAINER Matt Koski <maccam912@gmail.com>
 
+RUN export DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update
 RUN apt-get upgrade -y
 

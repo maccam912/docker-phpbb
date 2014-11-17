@@ -3,7 +3,7 @@ MAINTAINER Matt Koski <maccam912@gmail.com>
 
 RUN echo "[archlinuxfr]" >> /etc/pacman.conf
 RUN echo "SigLevel = Never" >> /etc/pacman.conf
-RUN echo "Server = http://repo.archlinux.fr/$arch" >> /etc/pacman.conf
+RUN echo "Server = http://repo.archlinux.fr/x86_64/" >> /etc/pacman.conf
 RUN pacman -Syu --noconfirm
 RUN pacman -Sy --noconfirm yaourt sqlite
 #RUN pacman -Sy --noconfirm phpbb3

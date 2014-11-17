@@ -3,7 +3,7 @@ MAINTAINER Matt Koski <maccam912@gmail.com>
 
 RUN pacman -Syu --noconfirm
 
-RUN curl -O https://aur.archlinux.org/packages/pa/package-query/package-query.tar.gz && tar zxvf package-query.tar.gz && cd package-query && makepkg -si && cd .. && curl -O https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz && tar zxvf yaourt.tar.gz && cd yaourt && makepkg --asroot -si && cd ..
+RUN curl -O https://aur.archlinux.org/packages/pa/package-query/package-query.tar.gz && tar zxvf package-query.tar.gz && cd package-query && makepkg --asroot -si && cd .. && curl -O https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz && tar zxvf yaourt.tar.gz && cd yaourt && makepkg --asroot -si && cd ..
 
 RUN pacman -Sy --noconfirm sqlite
 

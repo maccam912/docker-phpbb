@@ -6,7 +6,7 @@ RUN echo "SigLevel = Never" >> /etc/pacman.conf
 RUN echo "Server = http://repo.archlinux.fr/x86_64/" >> /etc/pacman.conf
 RUN pacman -Syu --noconfirm
 RUN pacman -Sy --noconfirm yaourt sqlite binutils
-RUN yaourt -Sy --noconfirm phpbb3
+RUN yaourt -Sy --noconfirm phpbb3 php-sqlite
 
 #RUN mkdir /Development
 

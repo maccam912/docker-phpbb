@@ -6,7 +6,7 @@ RUN export DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
 RUN apt-get upgrade -y
 
-RUN apt-get install sqlite phpbb3 -y
+RUN apt-get install sqlite phpbb3 1 3 -y
 
 #RUN mkdir /Development
 

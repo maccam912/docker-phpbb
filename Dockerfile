@@ -4,7 +4,7 @@ MAINTAINER Matt Koski <maccam912@gmail.com>
 RUN apt-get update
 RUN apt-get upgrade -y
 
-RUN apt-get install wget unzip -y
+RUN apt-get install wget unzip nginx sqlite -y
 
 RUN mkdir /Development
 
